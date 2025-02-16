@@ -1,0 +1,27 @@
+{
+  "name": "yt-downloader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "pkg": "pkg -t node18-win-x64 ./index.js --output ytd.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+      "ffmpeg.exe"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "nodemon": "^3.1.9",
+    "yauzl": "^3.2.0",
+    "ytdl-core": "npm:@distube/ytdl-core@^4.16.4"
+  }
+}
